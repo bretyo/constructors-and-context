@@ -129,8 +129,9 @@ function Employee(name, email, hireDate) {
   
   // Code here
   User.prototype.removeSavedPost = function(id){
-    const found = this.savedPosts.find(element => element[0] = id);
-    this.savedPosts.splice(found.id, 1)
+    // const found = this.savedPosts.find(element => element[0] = id);
+    // this.savedPosts.splice(found.id, 1)
+    this.savedPosts.splice(this.savedPosts.find(element => element[0] = id).id, 1)
   }
   
   ////////// PROBLEM 7 //////////
